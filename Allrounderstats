@@ -1,0 +1,5 @@
+SELECT Name,Runs,Wickets,Averagediff
+FROM stats
+WHERE Runs>500 AND wickets>25
+group by name
+order by Averagediff DESC;
